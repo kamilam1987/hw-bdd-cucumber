@@ -32,7 +32,7 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
   #   "When I uncheck..." steps in lines 89-95 of web_steps.rb
   ratings = rating_list.split(",")
   ratings.each do |r|
-    if uncheck == true 
+    if uncheck
       uncheck "ratings_#{r.squish}"
     else
       check "ratings_#{r.squish}"

@@ -33,6 +33,8 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   Then I should see "The Incredibles"
   And I should see "The Terminator "
   # enter step(s) to ensure that other movies are not visible
+  And I should not see "Chocolat"
+  And I should not see "Chicken Run"
 
 Scenario: all ratings selected
   # see assignment
